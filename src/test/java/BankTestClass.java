@@ -40,7 +40,7 @@ public class BankTestClass {
         $("[placeholder='Город']").setValue("Пе");
         $(byText("Петрозаводск")).click();
         $("[data-test-id='date']").click();
-        $(byText("30")).click();
+        $(byText(generateDate(7, "dd"))).click();
         $("[name='name']").setValue("Сергей Петров");
         $("[name='phone']").setValue("+79123456789");
         $("[data-test-id='agreement']").click();
